@@ -1,0 +1,163 @@
+.video {
+    width: 100%;
+}
+
+.c-video {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.c-video:hover .controls {
+    transform: translateY(0);
+}
+
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateY(100%) translateY(-5px);
+    transition: all 0.2s;
+}
+
+.buttons {
+    padding: 10px;
+}
+
+/*----play----*/
+/*--mouse-pointer--*/
+#play-pause {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+/*--mouse-pointer--*/
+
+#play-pause::before {
+    content: '\f144';
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+#play-pause.play::before {
+    content: '\f144';
+}
+
+#play-pause.pause::before {
+    content: '\f28b';
+}
+
+#play-pause.rewatch::before {
+    content: '\f0e2';
+}
+
+.orange-bar {
+    height: 10px;
+    top: 0;
+    left:0;
+    width: 100%;
+    background-color: #000;
+}
+
+.orange-juice {
+    height: 10px;
+    background-color: orangered;
+}
+/*----play----*/
+
+/*----fullscreen----*/
+/*--mouse-pointer--*/
+#fullscreen {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+/*--mouse-pointer--*/
+
+#fullscreen::before {
+    content: '\f065';
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+#fullscreen.play::before {
+    content: '\f065';
+}
+
+#fullscreen.pause::before {
+    content: '\f066';
+}
+/*----fullscreen----*/
+/*-----volume-----*/
+.volume {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+#volinc::before {
+    content: '\f028';
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+#voldec::before {
+    content: '\f027';
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+/*-----volume-----*/
+/*---mute---*/
+#mute {
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+#mute::before {
+    content: '\f0f3';
+    font-family: FontAwesome;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+#mute.muted::before {
+     content: '\f1f6';
+ }
+
+#mute.unmuted::before {
+    content: '\f0f3';
+}
+/*---mute---*/
